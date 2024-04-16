@@ -2,12 +2,12 @@ Steps for running the project
 
 --FOR FRONTEND
 
-cd client
-npm install
-npm start
+1.cd client
+2. npm install
+3.npm start
 
 --FOR BACKEND
 
-cd server
-npm install
-npm run dev
+1. cd server
+2. npm install
+3. npm run dev
