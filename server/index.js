@@ -1,5 +1,5 @@
 import express from "express";
-import cors from 'cors';
+import cors from "cors";
 import { jsonData } from "./constants.js";
 
 const port = 3000;

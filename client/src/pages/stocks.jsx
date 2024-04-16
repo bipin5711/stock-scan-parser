@@ -47,19 +47,23 @@ export default function Stock() {
                 ) : criteria.type == "variable" ? (
                   <>
                     <p className="title">
-                      {criteria.text.replace(
-                        Object.keys(criteria.variable)?.[0],
-                        criteria.variable[Object.keys(criteria.variable)?.[0]]
-                          ?.default_value ||
+                      {criteria.text
+                        .replace(
+                          Object.keys(criteria.variable)?.[0],
                           criteria.variable[Object.keys(criteria.variable)?.[0]]
-                            ?.values[0]
-                      ).replace(
-                        Object.keys(criteria.variable)?.[1],
-                        criteria.variable[Object.keys(criteria.variable)?.[1]]
-                          ?.default_value ||
+                            ?.default_value ||
+                            criteria.variable[
+                              Object.keys(criteria.variable)?.[0]
+                            ]?.values[0]
+                        )
+                        .replace(
+                          Object.keys(criteria.variable)?.[1],
                           criteria.variable[Object.keys(criteria.variable)?.[1]]
-                          ?.values?.[0]
-                      )}
+                            ?.default_value ||
+                            criteria.variable[
+                              Object.keys(criteria.variable)?.[1]
+                            ]?.values?.[0]
+                        )}
                     </p>
                   </>
                 ) : null}
