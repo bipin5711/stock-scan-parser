@@ -10,6 +10,11 @@
     padding-bottom: 8px;
     cursor: pointer;
 }
+.selected-stock {
+    background-color:#1686b0;
+    padding: 10px;
+    margin-left: -10px;
+}
 .box {
     background-color: #000;   
     margin-top: 120px;

@@ -31,10 +31,12 @@ export default function Stock() {
         ) : null}
         {selectedStock ? (
           <div>
+            <div className="selected-stock">
             <p className="title">{selectedStock.name}</p>
             <span style={{ color: selectedStock.color }}>
               {selectedStock.tag}
             </span>
+            </div>
             {selectedStock.criteria.map((criteria, index) => (
               <div>
                 {criteria.type == "plain_text" ? (
